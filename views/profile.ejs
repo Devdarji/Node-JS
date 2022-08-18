@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <style>
+      h1 {
+        color: rgb(255, 129, 129);
+        text-align: center;
+      }
+      h2 {
+        text-align: center;
+      }
+    </style>
+    <title>Profile Page</title>
+  </head>
+  <body>
+    <%- include('common/header') %> 
+    <hr>
+    <div>
+      <h2>Profile Page</h2>
+    </div>
+    <hr />
+    <div>
+      <h3>Name: <%= user.name %></h3>
+      <h3>Email: <%= user.email %></h3>
+      <h3>Gender: <%= user.gender %></h3>
+    </div>
+    <hr>
+    <%- include('common/footer') %> 
+  </body>
+</html>
